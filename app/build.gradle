@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "com.leyka1398.onverter"
+        applicationId "com.leyka1398.converter"
         minSdkVersion 21
         targetSdkVersion 26
         versionCode 1
@@ -30,4 +30,13 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    // retrofit
+    compile "com.squareup.retrofit2:retrofit:2.3.0"
+    //compile "com.squareup.retrofit2:adapter-rxjava2:2.3.0"
+    compile "com.squareup.retrofit2:converter-gson:2.3.0"
+
+    // rxandroid
+    compile "io.reactivex.rxjava2:rxandroid:2.0.1"
+
+    //compile 'com.squareup.okhttp3:okhttp:3.8.1'
 }
